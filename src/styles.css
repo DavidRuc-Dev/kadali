@@ -1,19 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Fondo de la pag */
 * {
+
     background-color: #FAFAFF;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-@media (max-width: 957px) {
-    * {
-        margin-left: 70px;
-        margin-right: 70px;
-    }
-
+    color: #141414;
+    /* padding-left: 10px; 
+    padding-right: 10px; */
+    font-family: 'Poppins', sans-serif;
 }
