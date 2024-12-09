@@ -1,19 +1,22 @@
-<nav class="navbar">
-    <!-- Logo / Imagen -->
-    <div class="navbar-logo">
-      <img src="https://via.placeholder.com/50" alt="Logo" />
-    </div>
-  
-    <!-- Botones de opciones (escondidos en mobile) -->
-    <div class="navbar-links" [class.show]="isMenuOpen">
-      <a href="#" class="navbar-link">Inicio</a>
-      <a href="#" class="navbar-link">Servicios</a>
-      <a href="#" class="navbar-link">Contacto</a>
-    </div>
-  
-    <!-- Botón de menú (solo aparece en mobile) -->
-    <button class="navbar-toggle" (click)="toggleMenu()">
-      &#9776; <!-- Icono de "hamburguesa" -->
-    </button>
-  </nav>
+<nav class="navbar flex justify-between items-center p-4 md:px-20 mb-5">
+  <div class="navbar-logo">
+    <h1 class="kadali text-4xl lg-text-6xl">KADALI</h1>
+  </div>
+
+  <button
+    class="navbar-toggle block md:hidden text-xl p-2"
+    (click)="toggleMenu()"
+  >
+    &#9776; <!-- Icono de "hamburguesa" -->
+  </button>
+  <!-- Botones de opciones (escondidos en mobile) -->
+  <div class="navbar-links hidden md:flex gap-4" [class.show]="isMenuOpen">
+    <a href="#" class="navbar-link">Nosotros</a>
+    <a href="#" class="navbar-link">Servicios</a>
+    <a href="#" class="navbar-link">Contacto</a>
+    <a href="#" class="navbar-link">Precios</a>
+  </div>
+
+
+</nav>
   

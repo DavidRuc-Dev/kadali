@@ -1,71 +1,33 @@
-/* General styles for the navbar */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.kadali{ 
+  font-family: 'Kalnia';
+  color: #30343F;
+}
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-  }
-  
-  /* Logo section */
-  .navbar-logo img {
-    height: 40px;
-  }
-  
-  /* Links section */
-  .navbar-links {
-    display: flex;
-    gap: 1rem;
-    transition: max-height 0.3s ease-out;
-  }
-  
-  /* Links (individual) */
-  .navbar-link {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .navbar-link:hover {
-    background-color: #555;
-  }
-  
-  /* Menu toggle (mobile only) */
-  .navbar-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    /* Stack items vertically */
-    .navbar-links {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      max-height: 0;
-      overflow: hidden;
-    }
-  
-    .navbar-links.show {
-      max-height: 200px; /* Ajusta según la cantidad de enlaces */
-    }
-  
-    /* Show menu toggle button */
-    .navbar-toggle {
-      display: block;
-    }
-  }
-  
+  box-shadow: 0px 4px 6px #cccccc65 
+}
+
+
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links {
+  transition: 0.3s ease-out;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.navbar-link:hover {
+  color: white;
+  background-color: #273469;
+}
+
