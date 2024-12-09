@@ -1,0 +1,71 @@
+/* General styles for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Logo section */
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  /* Links section */
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  /* Links (individual) */
+  .navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    background-color: #555;
+  }
+  
+  /* Menu toggle (mobile only) */
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    /* Stack items vertically */
+    .navbar-links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    .navbar-links.show {
+      max-height: 200px; /* Ajusta según la cantidad de enlaces */
+    }
+  
+    /* Show menu toggle button */
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  

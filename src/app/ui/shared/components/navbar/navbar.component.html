@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <!-- Logo / Imagen -->
+    <div class="navbar-logo">
+      <img src="https://via.placeholder.com/50" alt="Logo" />
+    </div>
+  
+    <!-- Botones de opciones (escondidos en mobile) -->
+    <div class="navbar-links" [class.show]="isMenuOpen">
+      <a href="#" class="navbar-link">Inicio</a>
+      <a href="#" class="navbar-link">Servicios</a>
+      <a href="#" class="navbar-link">Contacto</a>
+    </div>
+  
+    <!-- Botón de menú (solo aparece en mobile) -->
+    <button class="navbar-toggle" (click)="toggleMenu()">
+      &#9776; <!-- Icono de "hamburguesa" -->
+    </button>
+  </nav>
+  
